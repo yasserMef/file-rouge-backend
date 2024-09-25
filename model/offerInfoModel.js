@@ -14,7 +14,7 @@ const jobSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  imageSociete: {
+  file: {
     type: String,
     
   },

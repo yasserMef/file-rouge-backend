@@ -18,7 +18,9 @@ const userSchema = new mongoose.Schema({
         lowercase:true,
         unique : true
     },
-    imageProfile : String ,
+    file : {
+        type:String
+    } ,
     password : {
         type : String,
         required : true,

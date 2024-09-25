@@ -39,5 +39,4 @@ exports.role = (...role) =>asyncHandler(async(req,res,next)=>{
     return next(new ApiError("you are not authorized to perform this action" , 403))
     }
     next()
-
 })

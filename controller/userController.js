@@ -2,6 +2,7 @@ const {token} = require("../util/token")
 const asyncHandler = require("express-async-handler")
 const UserModel  = require("../model/userModel")
 const bcrypt = require("bcryptjs/dist/bcrypt")
+const ApiError = require("../util/apiError")
 
 
 exports.signupService = asyncHandler(async(req,res,next)=>{
